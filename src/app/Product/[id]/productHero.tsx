@@ -91,7 +91,7 @@ export const ProductHero = ({ id, isMobile }: ProductHeroProps) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchSingleData(`https://dummyjson.com/products/${id}`));
+    dispatch(fetchSingleData(`https://dummyjson.com/products/${id}`) as any);
   }, []);
 
   const nextSlide = () => {

@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { ProductCard } from './types'
 import { ProductCardItem } from './ProductCard';
 import { Button } from '@mui/material';
+import { AsyncThunkAction } from '@reduxjs/toolkit';
 
 interface ProductListProps {
   hasPagination: boolean;
@@ -16,7 +17,7 @@ export const ProducstList = ({hasPagination}: ProductListProps) => {
   const [take, setTake] = useState<number>(10)
 
   useEffect(() => {
-    dispatch(fetchData(`https://dummyjson.com/products?limit=${take}&skip=10&select=title,price,thumbnail,discountPercentage,brand`));
+    dispatch(fetchData(`https://dummyjson.com/products?limit=${take}&skip=10&select=title,price,thumbnail,discountPercentage,brand`) as any);
   }, [take]);
 
   const renderProducts = () => {

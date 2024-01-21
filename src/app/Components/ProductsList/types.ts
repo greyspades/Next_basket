@@ -13,7 +13,7 @@ export type Product = {
 }
 
 export type ProductCard = {
-    id: string;
+    id: number;
     title: string;
     brand: string;
     discountPercentage: number;
