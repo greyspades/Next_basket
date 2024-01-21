@@ -197,7 +197,7 @@ export const ProductHero = ({ id, isMobile }: ProductHeroProps) => {
             <div className="bg-[#252B42] w-[30px] h-[30px] rounded-full"></div>
           </div>
           <div className="mt-[67px] flex place-items-center gap-4">
-            <Button className="bg-swatches-200 px-[20px] py-[10px] text-white capitalize">
+            <Button className="bg-swatches-200 lg:px-[20px] lg:py-[10px] text-white capitalize">
               Select Options
             </Button>
             <IconButton onClick={addProductToWishList} className="border-solid border-[1px] border-[#E8E8E8] p-4 bg-white">

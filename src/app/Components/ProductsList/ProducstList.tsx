@@ -43,7 +43,7 @@ export const ProducstList = ({hasPagination}: ProductListProps) => {
             <h3 className='font-[700] text-[24px] sm: text-center'>BESTSELLER PRODUCTS</h3>
             <h3 className='text-[#737373] text-center'>Problems trying to resolve the conflict between</h3>
         </div>
-        <div className='grid lg:grid-cols-5'>
+        <div className='grid lg:grid-cols-5 lg: mt-[40px]'>
           {renderProducts()}
         </div>
         {hasPagination && take < total! && (
